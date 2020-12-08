@@ -47,11 +47,13 @@ const PictureCard = (props) => {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      setLazy(true);
-    }, 200);
     getAPOD(date)
-      .then((res) => setAPOD(res))
+      .then((res) => {
+        setTimeout(() => {
+          setLazy(true);
+        }, 200);
+        setAPOD(res);
+      })
       .catch((err) => console.error);
   }, [date]);
 
