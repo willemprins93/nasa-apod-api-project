@@ -174,7 +174,6 @@
   }
 
   .img-box {
-    max-width: 90vw;
     height: auto;
     display: flex;
     justify-content: center;
@@ -182,6 +181,7 @@
   }
 
   .picture {
+    max-width: 90vw;
     max-height: 50vh;
   }
 }
