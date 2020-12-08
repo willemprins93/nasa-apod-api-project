@@ -5,6 +5,7 @@ import { getAPOD } from "../../services/nasaService";
 import "./PictureCard.css";
 
 const PictureCard = (props) => {
+  console.log("props: ", props);
   const [apod, setAPOD] = useState({});
   const [lazyLoad, setLazy] = useState(false);
   const [fullSizeToggle, setToggle] = useState("hidden");
