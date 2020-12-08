@@ -169,12 +169,8 @@
     max-width: 30vw;
   }
 
-  .picture-card {
-    margin-top: 0px;
-  }
-
   .img-box {
-    height: auto;
+    height: auto !important;
     display: flex;
     justify-content: center;
     align-items: center;
