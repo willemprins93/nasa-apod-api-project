@@ -153,3 +153,30 @@
   letter-spacing: 0.02em;
   color: white;
 }
+
+@media only screen and (max-width: 999px) {
+  .control-nav {
+    width: 100vw;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controls-box {
+    position: relative;
+    width: auto;
+  }
+
+  .img-box {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .picture {
+    max-height: 50vh;
+  }
+}
