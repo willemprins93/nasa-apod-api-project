@@ -63,7 +63,15 @@ class Navigation extends Component {
     const { date, lazyLoad } = this.state;
     return (
       <div className={`navigation-container ${lazyLoad && "lazy-load"}`}>
+        <a href="https://www.nasa.gov/" target="_blank">
+          <img
+            className="logo"
+            src={require("../../images/NASA_logo.svg")}
+            alt="nasa_logo"
+          />
+        </a>
         <h1>Astronomy Picture of the Day</h1>
+        <span id="line" />
         <div className="navigation">
           <Link onClick={this.goToday} className="nav-link" to="/today">
             Today
