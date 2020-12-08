@@ -166,7 +166,7 @@
 
   .controls-box {
     position: relative;
-    width: auto;
+    max-width: 30vw;
   }
 
   .img-box {
