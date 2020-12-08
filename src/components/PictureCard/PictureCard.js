@@ -113,7 +113,7 @@ const PictureCard = (props) => {
         </div>
       </nav>
       <div className="picture-card">
-        <p className="title">Astronomy Picture of the Day: {date}</p>
+        {/* <p className="title">Astronomy Picture of the Day: {date}</p> */}
         <div className="img-box">
           <a href="" onClick={toggleFullSize}>
             <img
