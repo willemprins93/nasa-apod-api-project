@@ -1,0 +1,155 @@
+.control-nav {
+  width: 400px;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls-divider {
+  border-color: grey;
+  height: 20px;
+}
+
+.controls-box {
+  position: relative;
+  width: 133px;
+}
+
+.controls {
+  font-family: "Space Mono", monospace !important;
+  display: inline-block;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.controls::after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: "";
+  background: white;
+  width: 0;
+  height: 1px;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.28, 0.69, 0.85, 0.47);
+}
+
+.controls:hover::after {
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.picture-card {
+  margin-top: 20px;
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.picture {
+  max-height: 50vh;
+}
+
+.fullsize-wrapper {
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.fullsize-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  min-width: 96vw;
+  min-height: 96vh;
+  top: 2vh;
+  left: 2vw;
+}
+
+.hidden {
+  z-index: -999;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.display {
+  z-index: 1000;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.picture,
+.title,
+.copyright,
+.copyright-logo,
+.description,
+.date {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.lazy-load {
+  opacity: 1;
+}
+
+.copyright-logo {
+  line-height: 0em;
+  display: inline;
+  color: grey;
+  font-size: 26px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.copyright {
+  display: inline;
+  line-height: 0em;
+  font-size: 14px;
+  color: grey;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+.title,
+.description {
+  letter-spacing: 0.02em;
+  max-width: 80%;
+}
+
+.heading {
+  letter-spacing: 0.02em;
+  color: white;
+}

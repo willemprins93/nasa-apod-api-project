@@ -1,0 +1,96 @@
+:root {
+  --navigation-height: 270px;
+}
+
+.navigation-container {
+  opacity: 0;
+  background-position: center;
+  background-size: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+.lazy-load {
+  opacity: 1;
+}
+
+.navigation {
+  height: var(--navigation-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-family: "Space Mono", monospace !important;
+  display: block;
+  border: 1px solid white;
+  width: 251px;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 10px auto;
+  color: white;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-link:hover,
+.date-submit:hover {
+  background-color: white;
+  color: black;
+}
+
+.date-submit {
+  font-family: "Space Mono", monospace !important;
+  opacity: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-top: none;
+  width: 251px;
+  padding: 10px 0;
+  transition: all 0.15s ease-in-out;
+}
+
+.display {
+  opacity: 1;
+}
+
+.navigation input {
+  border: 1px solid white;
+  display: block;
+  width: 250px;
+  margin: 10px auto 0;
+  outline: none;
+}
+
+::-webkit-datetime-edit {
+  font-family: "Space Mono", monospace !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+
+::-webkit-datetime-edit-text {
+  font-family: "Space Mono", monospace !important;
+  padding: 0 0.3em;
+}
+
+::-webkit-calendar-picker-indicator {
+  font-family: "Space Mono", monospace !important;
+  margin: 10px;
+  cursor: pointer;
+}
